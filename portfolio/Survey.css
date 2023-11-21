@@ -1,0 +1,90 @@
+/* Apply some basic styling to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the title */
+  #title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  /* Style the form container */
+  #survey-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style labels and inputs */
+  label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  /* Style the submit button */
+  #submit {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the legends */
+  legend {
+    font-weight: bold;
+  }
+  
+  /* Style the checkboxes and radio buttons */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Add some margin to the text area */
+  textarea {
+    margin-top: 5px;
+  }
+  
+  /* Add styles for description */
+  #description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+   div{
+     margin-top: 20px;
+   }
+
+   #phone {
+    width: 100%; /* Adjust the width as needed */
+  }
+  

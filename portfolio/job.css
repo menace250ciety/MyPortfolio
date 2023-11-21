@@ -1,0 +1,53 @@
+/* Updated styles for a gaming-themed jobs page */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+header {
+  background-color: #0d1117;
+  color: #58a6ff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #58a6ff;
+}
+
+p {
+  color: #c9d1d9;
+  line-height: 1.6;
+}
+
+.coming-soon {
+  background-color: #1f6feb;
+  border-radius: 5px;
+  padding: 15px;
+  color: #f0f6fc;
+}
+
+footer {
+  background-color: #0d1117;
+  color: #58a6ff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
