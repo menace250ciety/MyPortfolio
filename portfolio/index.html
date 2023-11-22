@@ -186,5 +186,19 @@ Feel free to explore my work and get in touch to collaborate on exciting project
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+      let prevScrollPos = window.pageYOffset;
+      const navbar = document.getElementById("navbar");
+
+      window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = `-${navbar.offsetHeight}px`;
+        }
+        prevScrollPos = currentScrollPos;
+      }
+    </script>
   </body>
 </html>
