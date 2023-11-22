@@ -128,7 +128,8 @@ img {
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   padding: 0 20px;
-  margin-top: 80px;
+  padding-top: 100px;
+  margin-top: 50px;
 }
 
 .welcome-section > p {
@@ -139,7 +140,10 @@ img {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 80px;
+}
+
+.welcome-section > p:last-of-type {
+  margin-bottom: 20px;
 }
 
 .projects-section {
