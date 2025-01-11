@@ -1,204 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"
-    >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    >
-    <meta name="description" content="Personal Portfolio Webpage"
-    >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$ASCII MemeCoin</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
 <body>
-  <nav id="navbar" class="nav">
-    <ul>
-    <li>
-     <a href="#welcome-section">About</a>
-    </li>
-    <li>
-      <a href="#projects">Work</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-    </ul>
-  </nav>
- 
-  <section id="welcome-section" class="welcome-section">
-   <h1>Hey I am Tobi Elshalom Lawal</h1>
-   <p>a passionate web developer. 
-Feel free to explore my work and get in touch to collaborate on exciting projects!</p>
-<p>I specialize in creating responsive and user-friendly websites. I believe in the power of technology to transform ideas into reality.
-</p>
-<p>I'm enthusiastic about learning new technologies and improving my skills to deliver high-quality projects. I enjoy creating engaging and interactive web experiences that leave a lasting impression.</p>
-<p>Feel free to explore my work and get in touch to collaborate on exciting <a href="#projects">projects!</a></p>
-  </section>
+    <!-- Header Section -->
+    <header>
+        <h1>$ASCII</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link" aria-label="Navigate to About">About</a></li>
+                <li><a href="#tokenomics" class="nav-link" aria-label="Navigate to Tokenomics">Tokenomics</a></li>
+                <li><a href="#join" class="nav-link" aria-label="Navigate to Join Section">Join</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="projects" class="projects-section">
-   <h2 class="projects-section-header">These are some of my projects</h2>
-   
-   <div class="projects-grid">
-    <a 
-    href="Tribute.html" 
-    target="_self" 
-    class="project project-tile"
-    >
-      <img 
-      class="project-image" 
-      src="Pictures\Tribute.png" 
-      alt="project"
-      >
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Tribute Page
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a 
-    href="Quiz.html" #
-    target="_self" 
-    class="project project-tile"
-    >
-      <img 
-      class="project-image" 
-      src="Pictures\Accessibility Quiz.png"
-      alt="project"
-      >
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Quiz
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a 
-    href="Photo.html" 
-    target="_self" 
-    class="project project-tile"
-    >
-      <img 
-      class="project-image" 
-      src="Pictures\Photo Gallery - Brave 09_11_2023 13_29_17.png" 
-      alt="project"
-      >
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Cat Photo Gallery
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a 
-    href="main.html" 
-    target="_self" 
-    class="project project-tile"
-    >
-      <img 
-      class="project-image" 
-      src="Pictures/main.html - Brave 21_11_2023 03_18_32.png" 
-      alt="project">
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Product Landing page
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a 
-    href="Survey.html" 
-    target="_self" 
-    class="project project-tile">
-      <img 
-      class="project-image" 
-      src="Pictures\Survey.png" 
-      alt="project"
-      >
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Survey Form
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-    <a 
-    href="Magazine.html" 
-    target="_self" 
-    class="project project-tile"
-    >
-      <img 
-      class="project-image" 
-      src="Pictures\Magazine.png" 
-      alt="project"
-      >
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Magazine
-        <span class="code">/&gt;</span>
-      </p>
-    </a>
-  </div>
-  </section>
+    <!-- Main Content -->
+    <main class="content">
+        <div class="about-container">
+            <img src="images/meme-coin7.jpg" alt="ASCII MemeCoin Logo" id="logo" />
+            <div class="description" id="about">
+                <h2>About $ASCII</h2>
+                <p>Welcome to the exciting world of $ASCII memecoin space, a coin that’s as innovative as it is fun. Inspired by the American Standard Code for Information Interchange (ASCII), $ASCII is more than just a token. It’s a vibrant community and a bridge between technology, culture, and the crypto landscape.</p>
+                <p>What makes $ASCII stand out in the vast world of memecoins? Well, it's not just about the memes; it’s about the utility, the culture, and the power of information exchange. ASCII, the very language that drives our digital world, now has its own coin! It's a celebration of how far we've come in the digital age and how $ASCII will lead us into the future with potential for growth, innovation, and community-driven power.</p>
+                <p>So, whether you're here for the memes, the tech, or the vision, $ASCII offers a unique combination of all these elements. You’re not just holding a coin; you’re part of a revolution in how information and value can be exchanged.</p>
+                <p>Welcome aboard, and get ready for a ride that’s as exciting as the code that powers the digital world! Let’s go, $ASCII!</p>
+            </div>
+        </div>
+    </main>
 
-  <a
-  href=""
-  class="btn btn-show-all"
-  target="_self"
-  >Show all<i class="fas fa-chevron-right"></i
-></a>
+
+    <!-- Game Section -->
+    <section id="game">
+        <h2>Click the Logo to Earn $ASCII Points!</h2>
+        <p>Points: <span id="score">0</span></p>
+        <button id="reset-button" aria-label="Reset Score">Reset Score</button>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics">
+        <h2>Tokenomics</h2>
+        <ul>
+            <li>Transarent and totally realiable</li>
+        </ul>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join">
+        <h2>Join the $ASCII Community</h2>
+        <div class="embed-placeholder">
+    <a href="x.com">
+        <img src="images/x.png" alt="X.com">
+    </a>
+    <a href="https://t.me/+i88XlqVGUFJlYmQ0">
+        <img src="images/tg.png" alt="Telegram">
+       </div>
+    </a>
 </section>
-
-<section id="contact" class="contact-section">
-<div class="contact-section-header">
-  <h2>Let's work together...</h2>
-  <p>How do you take your coffee?</p>
-</div>
-<div class="contact-links">
-  <a
-    href="https://web.facebook.com/profile.php?id=100079110847723"
-    target="_blank"
-    class="btn contact-details"
-    ><i class="fab fa-facebook-square"></i> Facebook</a
-  >
-  <a
-    id="profile-link"
-    href="https://github.com/menace250ciety"
-    target="_blank"
-    class="btn contact-details"
-    ><i class="fab fa-github"></i> GitHub</a
-  >
-  <a
-    href="https://twitter.com/elshalom_lawal"
-    target="_blank"
-    class="btn contact-details"
-    ><i class="fab fa-twitter"></i> Twitter</a
-  >
-  <a 
-  href="mailto:your.tobilawal2019@gmail.com" 
-  class="btn contact-details"
-  ><i class="fas fa-at"></i> Send a mail</a
-  >
-   <a href="" class="btn contact-details"
-    ><i class="fas fa-mobile-alt"></i> Call me</a>
-   </div>
-  </section>
-  <footer>
     
-     <p>&copy; Created By
-       <a href="https://www.freecodecamp.org/certification/Tobi_Elshalom_Lawal/responsive-web-design" target="_blank">Tobi Elshalom <i class="fab fa-free-code-camp"></i
-        ></a>
-      </p>
+    <!-- DEX Screener Section -->
+    <section id="dex">
+        <h2>DEX Screener</h2>
+        <div class="embed-placeholder">
+            <a href="dexscreener.com">
+                <img src="images/dex.png" alt="Dexscreener">
+            </a>
+        </div>
+    </section>
+
+    <!-- Wallet Section -->
+    <section id="wallet">
+        <h2>Wallet</h2>
+        <div class="embed-placeholder">
+            <a href="pump.fun">
+                <img src="images/pump.png" alt="Pump.fun">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 $ASCII MemeCoin. All rights reserved.</p>
     </footer>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script>
-      let prevScrollPos = window.pageYOffset;
-      const navbar = document.getElementById("navbar");
-
-      window.onscroll = function() {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollPos > currentScrollPos) {
-          navbar.style.top = "0";
-        } else {
-          navbar.style.top = `-${navbar.offsetHeight}px`;
-        }
-        prevScrollPos = currentScrollPos;
-      }
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
